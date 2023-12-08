@@ -7,7 +7,9 @@ export const InitTheme: React.FC = () => {
     // eslint-disable-next-line @next/next/no-before-interactive-script-outside-document
     <Script
       id="theme-script"
-      strategy="beforeInteractive"
+      // TODO: Bug https://github.com/vercel/next.js/issues/56484
+      // Comment out beforeInteractive strategy below as a workaround
+      // strategy="beforeInteractive"
       dangerouslySetInnerHTML={{
         __html: `
   (function () {
