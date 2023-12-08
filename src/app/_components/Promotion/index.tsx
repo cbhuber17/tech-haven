@@ -13,8 +13,10 @@ const Promotion = () => {
 
   const targetDate = new Date()
 
-  // TODO: To start: make the promo 3 days from now, or randomized, etc.
-  targetDate.setDate(targetDate.getDate() + 3)
+  // Make random
+  targetDate.setDate(targetDate.getDate() + Math.floor(Math.random() * (10 - 1 + 1)) + 1)
+  targetDate.setHours(Math.floor(Math.random() * (21 - 1 + 1)) + 1)
+  targetDate.setMinutes(Math.floor(Math.random() * (50 - 1 + 1)) + 1)
 
   useEffect(() => {
     const timerInterval = setInterval(() => {
