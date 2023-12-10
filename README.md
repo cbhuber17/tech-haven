@@ -8,4 +8,4 @@ A technology e-commerce website for hosting many modern tech-savvy products!
 
 ## Payload CMS
 
-Powered by: (payloadcms)[https://payloadcms.com/].
+Powered by: [payloadcms](https://payloadcms.com/).
